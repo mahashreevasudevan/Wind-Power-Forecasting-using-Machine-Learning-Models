@@ -12,7 +12,7 @@ Wind is unpredictable, and that makes it difficult to plan energy use. This proj
 ## Model Pipeline:
 
 ### Data Source - 
-The historical wind speed data of 10-mintute interval is taken from Copernicus Climate Data Store (ERA5 hourly data). 
+The historical wind speed data of 10-mintute interval and the power curve data of 2 MW wind turbine is taken from Copernicus Climate Data Store (ERA5 hourly data). 
 The wind power is generated using the Pow Gen.m file. 
 
 <img width="1995" height="1035" alt="wind speed - newnew" src="https://github.com/user-attachments/assets/d4c3828d-c33b-4c09-8707-e63faf226307" />
