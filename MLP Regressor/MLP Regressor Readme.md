@@ -13,7 +13,7 @@ This project is about short-term wind power forecasting using an MLP Regressor m
 
 This project applies predictive modeling to forecast future wind power output. The main steps include:
 
-- Data preprocessing and feature selection. **Data Source** - The wind data and the 2Mw wind turbine power curve data is taken from NIWE.  
+- Data preprocessing and feature selection. **Data Source** - The wind data at 10-minute interval and the 2MW wind turbine power curve data is taken from NIWE.  
 - Train-test split with clear separation for forecasting
 - Training a multi-layer perceptron (MLP) model
 - Evaluation using MAE, MSE, and RMSE
