@@ -36,9 +36,7 @@ Instead of training a model to mimic the data, the model includes physics theory
    - **Hidden layers:** 4 fully connected layers, each with 20 neurons  
    - **Activation function:** `tanh` — captures nonlinearity and keeps gradients flowing  
    - **Output layer:** 1 neuron forecasting wind power  
-   - **Loss function:** Combination of:
-     - Mean Squared Error (MSE) for data fit  
-     - Physics-based residual loss
+   - **Loss function:** Combination of Mean Squared Error (MSE) for data fit and Physics-based residual loss
    - **Optimizer:** Adam 
    - **Learning Rate:** Default (`0.001`), stable across training  
 
