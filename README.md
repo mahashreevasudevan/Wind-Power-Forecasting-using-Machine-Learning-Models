@@ -1,4 +1,4 @@
-# Wind Power Forecasting Models
+# Wind Power Forecasting 
 
 This repository contains a collection of traditional machine learning, deep learning, and physics-informed models developed for short-term (day-ahead) **wind power forecasting**. Each model explores different forecasting strategies using historical wind data.
 
