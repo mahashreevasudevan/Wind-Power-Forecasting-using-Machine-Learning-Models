@@ -12,7 +12,7 @@ Wind is unpredictable, and that makes it difficult to plan energy use. This proj
 ## Model Pipeline:
 
 ### Data Source - 
-The historical wind speed data of 10-mintute interval and the power curve data of 2 MW wind turbine is taken from Copernicus Climate Data Store (ERA5 hourly data). 
+The historical wind speed data of 1-hour interval and the power curve data of 2 MW wind turbine is taken from Copernicus Climate Data Store (ERA5 hourly data). 
 The wind power is generated using the Pow Gen.m file. 
 
 <img width="1995" height="1035" alt="wind speed - newnew" src="https://github.com/user-attachments/assets/d4c3828d-c33b-4c09-8707-e63faf226307" />
@@ -22,7 +22,7 @@ The wind power is generated using the Pow Gen.m file.
 - Load wind speed and power data from CSV files  
 - Convert timestamps into proper datetime format  
 - Separate out wind speed, power, and time columns  
-- Define the forecast range (144 points = 1 day)
+- Define the forecast range (1 day)
 
 ### 2. Set Up the Rolling Window  
 - Use the most recent 365 data points for each forecast step  
@@ -38,7 +38,7 @@ The wind power is generated using the Pow Gen.m file.
 
 ### 4. Forecast One Step Ahead  
 - After fitting, forecast just one value  
-- Store that forecast and repeat the process for all 144 points (one full day)
+- Store that forecast and repeat the process for one full day
 
 ### 5. Evaluate the Results  
 - Once all 144 forecasts are done, compare them to the actual power values  
