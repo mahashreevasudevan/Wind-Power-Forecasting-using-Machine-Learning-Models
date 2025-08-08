@@ -16,3 +16,9 @@ Wind power forecasting is essential for grid stability and efficient renewable e
 | **MLP Regressor**  | `MLP Regressor/`   | Feedforward neural network for regression on extracted features. |
 | **Time-MoE**       | `Time-MOE/`        | Mixture-of-Experts model designed for time series data. |
 | **PINN**           | `PINN/`            | Physics-Informed Neural Network integrating domain knowledge. |
+
+**Note**: The code and model description can be found in the folder for each model
+
+## Data:
+- The wind data for **ARIMA** and **BiLSTM** model are taken from Copernicus Climate Data Store (ERA5 hourly data) at 1-hr interval, whereas for rest of the models like **XGBoost**, **MLP Regressor**, **Time-MOE**, and **PINN**, the wind data is from NIWE at 10-minute interval.
+- The wind power data is generated using Pow Gen.m file and power curve data of 2MW wind turbine. 
