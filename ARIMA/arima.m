@@ -1,5 +1,4 @@
 % Loading the datasets
-%The wind data is at 10 minute interval
 data = readtable('D:\Wind\Wind Data.csv');
 powerCurveData = readtable('D:\Wind\power curve data.csv'); 
 
@@ -17,11 +16,11 @@ end
 datetimeArray = datetime(datetimeStrings, 'InputFormat', 'dd-MM-yyyy HH:mm');
 
 
-forecastDuration = 144; % forecasting for a day 
+forecastDuration = 24; % forecasting for a day 
 rollingWindowSize = 365; % Size of the rolling window in data points
 
 % Split the data into training and testing sets
-%the entire dataset except the last 144 points is considered for training 
+%the entire dataset except the forecast duration is considered for training 
 trainSize = height(data) - forecastDuration;
 trainData = actualPower(1:trainSize);
 testData = actualPower(trainSize+1:end);
@@ -98,5 +97,6 @@ title('Power Curve');
 xlabel('Wind Speed (m/s)');
 ylabel('Wind Power (kW)');
 grid on;
+
 
 
